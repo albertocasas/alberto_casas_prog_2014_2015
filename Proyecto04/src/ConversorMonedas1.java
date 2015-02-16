@@ -16,14 +16,14 @@ import java.awt.event.ItemListener;
 import java.awt.event.ItemEvent;
 
 
-public class ConversorMonedas extends JFrame {
+public class ConversorMonedas1 extends JFrame {
 	
 	private JPanel contentPane;
 	private JTextField ValorEuros;
 	private JTextField ValorConversion;
 	private JTextField MensajeControl;
 	private JComboBox moneda;
-
+	private float valorMonedaSelecc=0f;
 	DatosGenerales datos;
 	private String textoMonedas[];
 	
@@ -33,14 +33,10 @@ public class ConversorMonedas extends JFrame {
 	
 	//los datos de seleccion de las monedas
 	
-	private float valorMonedaSelecc=0f;
-	
-	
-
 	/**
 	 * Create the frame.
 	 */
-	public ConversorMonedas() {
+	public ConversorMonedas1() {
 		
 		{
 			setTitle("Ventana Conversi\u00f3n Dolares");
@@ -121,12 +117,12 @@ public class ConversorMonedas extends JFrame {
 						
 					}else{
 						
-					MensajeControl.setText("todo ok");
+					MensajeControl.setText("DATOS CORRECTOS");
 							ValorEuros.setText(String.valueOf(euros*valorMonedaSelecc));
 					}
 					
 				}catch (Exception e1){
-					MensajeControl.setText("error en la conversion");
+					MensajeControl.setText("FALLO EN LA CONVERSION");
 				}
 			
 			}
@@ -147,3 +143,4 @@ public class ConversorMonedas extends JFrame {
 			}
 		}
 	
+

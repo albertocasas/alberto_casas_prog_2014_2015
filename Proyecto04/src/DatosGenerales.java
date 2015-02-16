@@ -17,6 +17,7 @@ public class DatosGenerales {
 	
 	
 	
+	
 	public DatosGenerales()
 	{
 		// TODO Auto-generated constructor stub
@@ -29,5 +30,7 @@ public class DatosGenerales {
 	public float[] getValoresAEuro(){
 		
 		return valoresConversionMonedasAEuro;
+		
+
 	}
 }

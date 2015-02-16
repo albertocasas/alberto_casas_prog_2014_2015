@@ -2,7 +2,7 @@
 public class GestorViajes {
 
 	public static void main(String[] args) {
-		ConversorMonedas frame =new ConversorMonedas(); //se lanza.
+		ConversorMonedas1 frame =new ConversorMonedas1(); //se lanza.
 		frame.setVisible(true);
 		
 
